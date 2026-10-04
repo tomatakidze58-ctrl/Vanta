@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "id": "vantaclient",
+  "version": "${version}",
+  "name": "Vanta Client",
+  "description": "A purple-black customizable Fabric client for Minecraft 26.2 with PvP HUD, food and saturation info, waypoints, crosshair tools, armor and totem HUDs, visual controls, performance settings, shulker preview, chat utilities and more.",
+  "authors": ["Vanta Client"],
+  "icon": "assets/vantaclient/logo.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["dev.vanta.client.VantaClient"]
+  },
+  "mixins": ["vantaclient.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.19.3",
+    "minecraft": "~26.2",
+    "java": ">=25",
+    "fabric-api": "*"
+  }
+}
